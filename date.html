@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="datepicker.min.css" />
+
+	Uploaded Date To
+  <input class="form-control datepicker" type="text" name="txtDateTo" id="txtDateTo" value="" required>
+  
+  
+<script src="jquery-1.10.2.min.js"></script>
+<script src="bootstrap-datepicker.min.js"></script>
+<script src="daterangepicker.js"></script>
+<script>
+	$('#txtDateTo').datepicker({ format: 'dd/mm/yyyy',endDate:new Date()}).on('changeDate', function () {
+					$(this).datepicker('hide');
+				 });
+</script>
